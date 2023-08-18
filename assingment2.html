@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<style>
+  h3{
+  background:#234533;
+  height:40px;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+
+  }
+  .body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+    flex-direction:column;}
+
+  .form{
+  border-right:5px solid #234533;
+    border-left:5px solid #234533;
+    padding:20px;
+    background:lightcoral;
+    font-size:20px;
+      display:flex;
+  align-items:center;
+  justify-content:center;
+  width:50vw;
+
+
+  }
+  .btn{
+  background:aqua;
+
+  font-size:20px;
+  font-weight:400px;
+  padding:10px;
+  margin:5px;
+  border:solid white 5px;
+  border-radius:15px;
+}
+</style>
+
+
+<div class="body">
+  <h3>-- Registration Form --</h3>
+<div class="form">
+
+<form >
+  <label for="firstname">First name:</label>
+  <input type="text" name="firstname"><br><br>
+  <label for="lastname">Last name:</label>
+  <input type="text" name="lastname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" name="email"><br><br>
+  <label for="dob">Date of Birth:</label>
+  <input type="date" name="dob"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" name="password"><br><br>
+  <label for="mobile">Mobile:</label>
+  <input type="tel" name="mobile"><br><br>
+  <label>Qualification:</label>
+  <ul>
+    <input type="checkbox" name="qualification1" value="Graduate" checked="true">Graduate<br><br>
+    <input type="checkbox" name="qualification2" value="Post-Graduate">Post-Graduate<br><br>
+  </ul>
+  <label>Gender:</label>
+  <ul>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female
+    <input type="radio" name="gender" value="other">Other
+  </ul>
+  <label for="country">Country:</label>
+  <select name="country">
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="Australia">Australia</option>
+    <option value="UK">UK</option>
+    <option value="China">China</option>
+  </select><br><br>
+
+
+  <label for="comments">Comments:</label>
+  <textarea name="comments" rows="10" cols="20"></textarea><br><br>
+  <input type="submit" class="btn" value="Register">
+  <input type="reset" class="btn" value="Cancel">
+</form>
+</div>
+</div>
+</body>
+</head>
+</html>

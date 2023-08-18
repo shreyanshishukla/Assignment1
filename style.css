@@ -1,0 +1,213 @@
+.container{
+display:flex;
+flex-direction:column;
+}
+.navbar{
+background:white;
+border:solid 2px black;
+height:80px;
+width:inherit;
+display:flex;
+flex-direction:row;
+justify-content:flex-start;
+position:relative;
+align-items:center;
+
+}
+.section{
+display:flex;
+flex-direction:row;
+height:82vh;
+}
+.sidemenu{
+background:white;
+border:solid 2px black;
+width:20vw;
+display:flex;
+flex-direction:column;
+}
+.main{
+background:white;
+border:solid 2px black;
+width:80vw;
+
+}
+.sidemenuoptions a{
+border:solid 2px black;
+width:inherit;
+border-top:none;
+background:grey;
+height:30px;
+color:white;
+font-weight:bold;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+.option{
+position:relative;
+width:90px;
+height:40px;
+border-bottom:2px solid white;
+margin:9px;
+border-radius:4px;
+box-shadow:0 0 0 3px #66ccff;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+.value{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+ a{text-decoration:none;color:black; }
+.option .value .mainopt{
+position:absolute;
+font-family:arial;
+font-size:25px;
+font-weight:100;
+font-color:white;
+
+}
+.valuemenu{
+display:none;
+position:absolute;
+top:50px;
+width:140px;
+z-index:1;
+
+}
+.option a:hover{
+border-bottom:solid 4px #66ccff;
+
+
+}
+.temp{
+display:hidden;
+z-index-1;
+position:absolute;
+top:30px;]}
+
+
+
+.option:hover .valuemenu{
+color:white;
+background:black;
+display:flex;
+flex-direction:column;
+
+}
+
+.option:hover .valuemenu:hover{
+ color:white;
+ background:black;
+ display:flex;
+ flex-direction:column;
+
+ }
+.dropdownitem{
+border:1px solid black;
+width:inherit;
+height:40px;
+background:white;
+color:black;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.dropdownitem a{
+color:black;}
+
+.dropdownitem a:hover{
+}
+
+.containers{
+display:flex;
+flex-direction:row;
+position:relative;
+
+
+}
+.outer
+{
+display:flex;
+flex-direction:column;
+float:bottom;
+position:relative;
+aling-item:bottom;
+
+
+}
+
+.internal{
+
+height: 200px;
+width: 200;
+
+
+
+}
+.img1{
+animation: one 2s infinite;
+position:absolute;
+z-index:0;
+}
+
+.img2{
+position:absolute;
+z-index:-1;
+animation: two 2s infinite;}
+
+.img3{
+z-index:-2;
+position:absolute;
+animation: three 2s infinite;}
+
+img{
+height:200px;
+width:200px;}
+
+
+@keyframes one{
+0%{
+
+z-index:0;}
+32%{
+
+z-index:-1;
+}
+65%{
+
+z-index:-2;
+}
+}
+
+
+@keyframes two{
+0%{
+
+z-index:-1;}
+33%{
+
+z-index:0;}
+65%{
+
+z-index:-1;
+}
+}
+
+
+@keyframes three{
+0%{
+
+z-index:-2;}
+66%{
+
+z-index:0;
+}
+
+}
